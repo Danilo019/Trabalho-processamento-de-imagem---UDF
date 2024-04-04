@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- Definição do tipo de documento e idioma -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Configurações para a viewport -->
+<title>Processador de Imagem</title>
+<!-- Título da página -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Importação do CSS do Bootstrap -->
+<link rel="stylesheet" href="./css_processamento_de_imagem.css">
+<!-- Importação do arquivo CSS personalizado -->
+</head>
+<body>
+<!-- Corpo do documento -->
+  <div class="center">
+    <!-- Div centralizada -->
+    <div id="titulo">
+        <!-- Div para o título -->
+        <h2 style="margin: auto;">Processamento de Imagem</h2>
+        <!-- Título do documento -->
+    </div>
+  </div>
+  <br/>
+  <!-- Quebra de linha -->
+  <div class="processamento">
+    <!-- Div para o processamento -->
+    <label for="option-menu">Escolha uma opção de processamento:</label>
+    <!-- Label para o menu de opções -->
+    <select id="menu-opcoes" class="form-select">
+      <!-- Menu de seleção de opções -->
+      <option value="Pixelar">Pixelar</option>
+      <option value="Negativar">Negativar</option>
+      <option value="Espelhar">Espelhar</option>
+      <option value="Rotacionar">Rotacionar</option>
+      <option value="Deslocar">Deslocar</option> <!-- Adicionado opção de deslocamento -->
+      <option value="Escalar">Escalar</option> <!-- Adicionado opção de escalonamento -->
+    </select>
+    <!-- Fim do menu de seleção -->
+    <div class="inputs-container">
+      <!-- Div para os inputs -->
+      <input type="number" id="input-angulo" placeholder="Ângulo de rotação" class="form-control">
+      <!-- Input para o ângulo de rotação -->
+      <input type="number" id="input-deslocamento-x" placeholder="Deslocamento horizontal" class="form-control">
+      <!-- Input para o deslocamento horizontal -->
+      <input type="number" id="input-deslocamento-y" placeholder="Deslocamento vertical" class="form-control">
+      <!-- Input para o deslocamento vertical -->
+    </div>
+    <!-- Fim da div de inputs -->
+  </div>
+  <!-- Fim da div de processamento -->
+  <br/>
+  <!-- Quebra de linha -->
+  <br/>
+  <!-- Quebra de linha -->
+  <br/>
+  <!-- Quebra de linha -->
+  <p>Imagem Original: </p> <button type="button" class="btn btn-primary" id="botao-abrir">Escolher Imagem</button> <!-- Botão para abrir imagem --><br> <!-- Espaço entre o texto e o botão -->
+  <!-- Botão para abrir a imagem -->
+  <div class="blocos">
+    <!-- Div para a imagem original -->
+    <canvas id="canvas-original" width="600" height="600"></canvas>
+    <!-- Canvas para a imagem original -->
+    <div class="matrizes">
+      <!-- Div para as matrizes -->
+      <p>Matriz da Imagem Original</p>
+      <!-- Parágrafo para a matriz da imagem original -->
+      <textarea style="width: 40rem;" id="matriz-text-original" cols="10" rows="10"></textarea>
+      <!-- Textarea para a matriz da imagem original -->
+      <br/>
+      <!-- Quebra de linha -->
+      <br/>
+      <!-- Quebra de linha -->
+    </div>
+    <!-- Fim da div de matrizes -->
+  </div>
+  <!-- Fim da div de blocos -->
+  <p>Caso tenha escolhido a opção "escalar", informe as dimensões e clique no botão "escalar"</p>
+  <!-- Parágrafo de instrução -->
+  <input type="number" id="input-escala-x" placeholder="Fator de escala X"> <!-- Adicionado input para fator de escala X -->
+  <!-- Input para o fator de escala X -->
+  <input type="number" id="input-escala-y" placeholder="Fator de escala Y"> <!-- Adicionado input para fator de escala Y -->
+  <!-- Input para o fator de escala Y -->
+  <button type="button" class="btn btn-primary" id="botao-escalar">Escalar</button> <!-- Botão para escalonar imagem -->
+  <!-- Botão para escalonar a imagem -->
+  <p>Imagem Processada:</p> <button type="button" class="btn btn-primary" id="botao-processar">Processar</button> <!-- Botão para processar imagem --> <br> <!-- Espaço entre o texto e o botão -->
+  <!-- Botão para processar a imagem -->
+  <div class="blocos2">
+    <!-- Div para a imagem processada -->
+    <canvas id="canvas-processada" width="600" height="600"></canvas>
+    <!-- Canvas para a imagem processada -->
+    <div class="matrizes2">
+      <!-- Div para as matrizes -->
+      <p>Matriz da Imagem Processada</p>
+      <!-- Parágrafo para a matriz da imagem processada -->
+      <textarea style="width: 40rem;" id="matriz-text-processada" cols="10" rows="10"></textarea>
+      <!-- Textarea para a matriz da imagem processada -->
+    </div>
+    <!-- Fim da div de matrizes -->
+  </div>
+  <!-- Fim da div de blocos 2 -->
+  <br/>
+  <!-- Quebra de linha -->
+  <br/>
+  <!-- Quebra de linha -->
+  <br/>
+  <!-- Quebra de linha -->
+  <script src="./JavaScript_Processamento_imagem.js"></script>
+  <!-- Importação do script JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Importação do jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Importação do Popper.js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Importação do JavaScript do Bootstrap -->
+</body>
+<!-- Fim do corpo do documento -->
+</html>
+<!-- Fim do documento HTML -->
+
+
