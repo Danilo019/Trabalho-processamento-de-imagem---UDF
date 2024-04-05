@@ -100,7 +100,7 @@ O código faz uso de diversas APIs para diferentes finalidades:
 
   ## 👨‍💻 Contribuidores
 
-💜 Um super thanks 👏 para essa galera que fez esse produto sair do campo da ideia e entrar nas lojas de aplicativos :)
+Agradecemos aos desenvolvedores por sua dedicação e trabalho árduo na criação deste projeto. Seu esforço é fundamental para tornar essa ferramenta uma realidade! 😃
 
 <table>
   <tr>
