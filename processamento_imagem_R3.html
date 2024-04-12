@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Processador de Imagem</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css_processamento_de_imagem.css">
+</head>
+<body>
+  <div class="center">
+    <div id="titulo">
+        <h2 style="margin: auto;">Processamento de Imagem</h2>
+    </div>
+  </div>
+  <br/>
+  <div class="processamento">
+    <label for="option-menu">Escolha uma opção de processamento:</label>
+    <select id="menu-opcoes" class="form-select">
+      <option value="Pixelar">Pixelar</option>
+      <option value="Negativar">Negativar</option>
+      <option value="Espelhar">Espelhar</option>
+      <option value="Rotacionar">Rotacionar</option>
+      <option value="Deslocar">Deslocar</option>
+      <option value="Escalar">Escalar</option>
+    </select>
+    <div class="inputs-container">
+      <input type="number" id="input-angulo" placeholder="Ângulo de rotação" class="form-control">
+      <input type="number" id="input-deslocamento-x" placeholder="Deslocamento horizontal" class="form-control">
+      <input type="number" id="input-deslocamento-y" placeholder="Deslocamento vertical" class="form-control">
+    </div>
+    <input type="number" id="input-escala-x" placeholder="Fator de escala X">
+    <input type="number" id="input-escala-y" placeholder="Fator de escala Y">
+    <button type="button" class="btn btn-primary" id="botao-escalar">Escalar</button>
+  </div>
+  </div>
+  <div>
+  <br/>
+  <br/>
+  <br/>
+  <p>Imagem Original: </p> <button type="button" class="btn btn-primary" id="botao-abrir">Escolher Imagem</button> 
+  <br>
+   <div class="blocos">
+    <canvas class id="canvas-original" width="600" height="600"></canvas> 
+    <div class="matrizes">
+      <p>Matriz da Imagem Original</p>
+      <textarea style="width: 25rem;" id="matriz-text-original" cols="10" rows="10"></textarea>
+      <br/>
+      <br/>
+    </div>
+  </div>
+  <p>Imagem Processada:</p> <button type="button-processar" class="btn btn-primary" id="botao-processar">Processar</button> <br>
+  <div class="blocos2">
+    <canvas id="canvas-processada" width="600" height="600"></canvas>
+    <div class="matrizes2">
+      <p>Matriz da Imagem Processada</p>
+      <textarea style="width: 25rem;" id="matriz-text-processada" cols="10" rows="10"></textarea>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <script src="./JavaScript_Processamento_imagem.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+</body>
+</html>
+
+

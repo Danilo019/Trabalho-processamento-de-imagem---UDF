@@ -1,0 +1,19 @@
+APIs usadas: 
+API do DOM (Document Object Model):
+
+document.getElementById(): Usado para obter referências a elementos HTML pelo seu ID.
+addEventListener(): Usado para adicionar ouvintes de eventos a elementos HTML, como cliques de botões.
+
+API do Canvas:
+
+getContext('2d'): Usado para obter o contexto de desenho 2D do <canvas>, permitindo desenhar formas, textos e imagens no <canvas>.
+Métodos e propriedades do contexto 2D, como drawImage(), getImageData(), putImageData(), fillRect(), etc., são utilizados para manipular e desenhar imagens.
+
+API de File (para manipulação de arquivos):
+
+input.type: Usado para definir o tipo de entrada do elemento <input>, neste caso, definido como 'file' para permitir a seleção de arquivos.
+input.accept: Usado para especificar os tipos de arquivos que podem ser selecionados na janela de seleção de arquivos.
+
+API de URL:
+
+URL.createObjectURL(file): Usado para criar uma URL temporária para o arquivo selecionado, que pode ser usado para carregar e exibir a imagem no <canvas>.

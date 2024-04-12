@@ -1,0 +1,218 @@
+/* Estilização do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Definindo a fonte padrão */
+    margin: 10px; /* Margem externa */
+    padding: 0; /* Padding zero */
+    background-color: #f7f7f7; /* Cor de fundo */
+    background-image: url('https://img.freepik.com/vetores-gratis/plano-de-fundo-da-area-de-trabalho-moderno-vetor-de-desenho-geometrico-azul_53876-135923.jpghttps://img.freepik.com/vetores-gratis/fundo-de-wireframe-geometrico-abstrato_52683-59421.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobrindo todo o corpo */
+    background-position: center; /* Posicionamento central da imagem de fundo */
+}
+
+/* Estilização do cabeçalho centralizado */
+.center {
+    display:flex; /* Display flex para alinhamento */
+    height: 5rem; /* Altura do cabeçalho */
+    background-image: url('https://i.pinimg.com/originals/f2/b7/6f/f2b76f4307933686bec32ad39d5857c0.gif'); /* Imagem de fundo do cabeçalho */
+    justify-content: space-between; /* Distribuição do espaço entre os elementos */
+    border-style: solid; /* Estilo da borda */
+}
+
+/* Estilização do título */
+#titulo{
+    display: flex; /* Display flex para alinhamento */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    padding-inline: 2rem; /* Preenchimento interno nas laterais */
+    justify-content: space-evenly; /* Distribuição do espaço entre os elementos */
+    align-items: center; /* Alinhamento vertical central */
+    font-size: larger; /* Tamanho da fonte */
+}
+
+/* Estilização do container de processamento */
+.processamento{
+    position: absolute; /* Posicionamento absoluto */
+    left: 50%; /* Alinhamento horizontal */
+    transform: translate(-50%, -50%); /* Centralizando verticalmente */
+    padding-top:100px ; /* Preenchimento superior */
+}
+
+  /* Estilização das matrizes */
+  .matrizes{
+    margin-left: 10%;
+    position: relative;
+    top: 500px;
+    right: 520px;
+    }
+    .matrizes2{
+        margin-left: 10%;
+        position: relative;
+        top: 500px;
+        right: 520px;
+    
+        }
+/* Estilização do container */
+.container {
+    max-width: 500px; /* Largura máxima */
+    margin: 0 auto; /* Margem automática nas laterais */
+    padding: 20px; /* Preenchimento interno */
+    background-color: #511515; /* Cor de fundo */
+    box-shadow: 0 0 10px rgba(176, 18, 18, 0.1); /* Sombra */
+}
+
+/* Estilização dos blocos */
+.blocos{
+    display: flex; /* Display flex para alinhamento */
+    flex-direction: row; /* Direção da flexão */
+    margin: 10px; /* Margem */
+}
+.blocos2{
+    display:flex;
+    flex-direction:unset;
+    margin: 10px;
+    position: relative;
+   top: -510px;;
+   left: 550px;
+    }
+.container2{
+    display: flex; /* Display flex para alinhamento */
+    flex-wrap: wrap; /* Quebra de linha automática */
+    margin: 10px; /* Margem */
+}
+
+/* Estilização do título h1 */
+h1 {
+    font-size: 2em; /* Tamanho da fonte */
+    font-family: "Roboto", sans-serif; /* Fonte */
+    color: #000; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    margin-top: 30px; /* Margem superior */
+    margin-bottom: 20px; /* Margem inferior */
+    text-align: center; /* Alinhamento central */
+  }
+
+/* Estilização do canvas */
+canvas {
+    display: block;
+    margin: 8 auto;
+    border: 1px solid #000000;
+    height: 400px;
+    background-color: #f0f0f0;
+    background-image: url('https://img1.gratispng.com/20190310/gkv/kisspng-portable-network-graphics-image-adobe-photoshop-de-5c8549198a5cd5.1320629715522388735667.jpg');
+    background-size: cover; /* Ajuste para cobrir todo o elemento */
+}
+
+/* Estilização do label */
+label {
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilização do select e inputs de número */
+select, input[type="number"] {
+    margin-bottom: 10px; /* Margem inferior */
+    padding: 5px; /* Preenchimento interno */
+    padding-right: 0.1px; /* Preenchimento à direita */
+    padding-left: 0.1px; /* Preenchimento à esquerda */
+}
+
+/* Estilização do botão */
+button {
+    padding: 8px 20px; /* Preenchimento */
+    background-color: #00063e; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: 1px solid #00063e; /* Borda sólida */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transição suave */
+    position: relative;
+}
+button {
+    padding: 8px 20px; /* Preenchimento */
+    background-color: #00063e; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: 1px solid #00063e; /* Borda sólida */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transição suave */
+    position: relative;
+}
+button-processar {
+    position: relative;
+    top: 10px;
+}
+
+/* Estilização do botão ao passar o mouse */
+button:hover {
+    background-color: #00042b; /* Cor de fundo ao passar o mouse */
+    border-color: #00042b; /* Cor da borda ao passar o mouse */
+}
+
+/* Estilização do textarea */
+textarea {
+    width: 80%; /* Largura */
+    margin-bottom: 20px; /* Margem inferior */
+    padding: 5px; /* Preenchimento */
+    position: relative;
+    top: 10px;
+}
+
+/* Estilização da barra de rolagem */
+#scrollbar-original,
+#scrollbar-processed {
+    overflow-y: scroll; /* Rolagem vertical */
+    height: 200px; /* Altura */
+    border: 1px solid #ccc; /* Borda */
+    margin-bottom: 20px; /* Margem inferior */
+    padding: 5px; /* Preenchimento */
+}
+
+/* Estilização da barra de rolagem no WebKit */
+#scrollbar-original::-webkit-scrollbar,
+#scrollbar-processed::-webkit-scrollbar {
+    width: 8px; /* Largura */
+}
+
+/* Estilização do polegar da barra de rolagem no WebKit */
+#scrollbar-original::-webkit-scrollbar-thumb,
+#scrollbar-processed::-webkit-scrollbar-thumb {
+    background-color: #00063e; /* Cor de fundo */
+}
+
+/* Estilização do parágrafo */
+p {
+    border-bottom: 0px solid #000; /* Borda inferior */
+    padding-bottom: 3px; /* Preenchimento inferior */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilização do container de processamento */
+.processamento {
+    margin-bottom: 30px; /* Margem inferior */
+  }
+  
+/* Estilização do container de inputs */
+.inputs-container {
+    display: flex; /* Display flex para alinhamento */
+    gap: 15px; /* Espaçamento entre os elementos */
+    margin-top: 15px; /* Margem superior */
+    width: 100%; /* Largura de 100% */
+}
+
+  
+/* Estilização do select */
+.form-select {
+    width: 200px; /* Largura */
+    margin-right: 10px; /* Margem direita */
+    border-color: #1f1d1d;
+    position: relative;
+    top: 10px;
+}
+
+  
+/* Estilização do input */
+.form-control {
+    padding: 6px 10px; /* Preenchimento */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Borda arredondada */
+    width: 200px; /* Largura */
+  }
